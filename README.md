@@ -24,7 +24,9 @@ This repo serves as the **index** to all my learning tracks, projects, and exper
 - **9th Sep 2025** → *04 → Mood of the Day Exercise*  
 
 ### ⚛️ FS Labs (Fullstack Open)
-- **9th Sep 2025** → *01_Lab → Digital Visiting Card Project*  
+- **9th Sep 2025** → [01_Lab → Digital Visiting Card Project](./fs-open_labs/01_lab/)  
+- **10th Sep 2025** → [02_Lab → Random Compliment Generator](./fs-open_labs/02_lab/)
+
 
 ### 📦 Upcoming
 - **Oct 2025** → MongoDB + AI API integrations  
