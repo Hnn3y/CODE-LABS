@@ -8,11 +8,30 @@ Here, things break because that’s how they get fixed, understood, and mastered
 
 This repo serves as the **index** to all my learning tracks, projects, and experiments.  
 
+---
+
+## 🗂️ Labs
+- **Python-Labs** → [python-labs](./MOOC-LABS/)  
+- **FS-Labs (Fullstack Open)** → [fs-labs](./fs-open_labs/)  
+- *(More labs coming soon: AI-Labs, CAD-Labs, Security-Labs, etc.)
+
+---
+
 ## 📈 Progress Log
-- **8th Sep 2025** → Python Meal Suggestion Exercise 
-- **9th Sep 2025** → Mood of the Day Exercise 
+
+### Python Labs
+- **8th Sep 2025** → *03 → Meal Suggestion Exercise*  
+- **9th Sep 2025** → *04 → Mood of the Day Exercise*  
+
+### ⚛️ FS Labs (Fullstack Open)
+- **9th Sep 2025** → *01_Lab → Digital Visiting Card Project*  
+
+### 📦 Upcoming
 - **Oct 2025** → MongoDB + AI API integrations  
-- **Future** → EV Systems | Aircraft Design | JARVIS-like AI 
+- **Future** → EV Systems | Aircraft Design | JARVIS-like AI  
+
+
+---
 
 ## 🎯 Vision
 Code Labs is more than practice.  
