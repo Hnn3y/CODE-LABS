@@ -10,7 +10,7 @@ This repo serves as the **index** to all my learning tracks, projects, and exper
 
 ## 📈 Progress Log
 - **8th Sep 2025** → Python Meal Suggestion Exercise 
-- **9th Sep 2025** → Python Meal Suggestion Exercise 
+- **9th Sep 2025** → Mood of the Day Exercise 
 - **Oct 2025** → MongoDB + AI API integrations  
 - **Future** → EV Systems | Aircraft Design | JARVIS-like AI 
 
