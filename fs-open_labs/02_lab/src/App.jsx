@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//->> PROJECT: Random Compliment Generator
+// Purpose: Practice multiple components + random array logic
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const compliments = [
+    "You're coding like a pro!",
+    "Keep pushing, you're unstoppable 💪",
+    "Debugging = Growing, you're doing great!",
+    "Your future self is proud of you 🚀",
+    "Smart + Consistent = YOU 🔥"
+  ];
+
+  // Pick one compliment randomly
+  const randomIndex = Math.floor(Math.random() * compliments.length);
+  const selectedCompliment = compliments[randomIndex];
+
+  // Compliment component
+  const Compliment = ({ text }) => (
+    <p className="text-xl font-semibold text-green-400">
+      {text}
+    </p>
+  );
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+      <div className="bg-gray-800 p-6 rounded-2xl shadow-lg text-center">
+        <h1 className="text-3xl font-bold mb-4">Random Compliment Generator</h1>
+        <Compliment text={selectedCompliment} />
+        <p className="mt-4 text-sm text-gray-400">Refresh to get a new compliment ✨</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
