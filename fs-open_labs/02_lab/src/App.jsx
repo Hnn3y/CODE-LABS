@@ -1,33 +1,61 @@
-//->> PROJECT: Random Compliment Generator
-// Purpose: Practice multiple components + random array logic
+//->> PROJECT: Course Information Refactor (01_course-refactor)
+// Goal: Split App into Header, Content, Total, and Part components with strict prop usage
 
-const App = () => {
-  const compliments = [
-    "You're coding like a pro!",
-    "Keep pushing, you're unstoppable 💪",
-    "Debugging = Growing, you're doing great!",
-    "Your future self is proud of you 🚀",
-    "Smart + Consistent = YOU 🔥"
-  ];
+// Header component
+const Header = ({ course }) => {
+  // TODO: Render the course title inside an <h1>
+  return (
+    <div>
+      <h1>{/* course name here */}</h1>
+    </div>
+  );
+};
 
-  // Pick one compliment randomly
-  const randomIndex = Math.floor(Math.random() * compliments.length);
-  const selectedCompliment = compliments[randomIndex];
-
-  // Compliment component
-  const Compliment = ({ text }) => (
-    <p className="text-xl font-semibold text-green-400">
-      {text}
+// Part component
+const Part = ({ name, exercises }) => {
+  // TODO: Render "part name + exercises"
+  return (
+    <p>
+      {/* name */} {/* exercises */}
     </p>
   );
+};
+
+// Content component
+const Content = ({ parts }) => {
+  // TODO: Render 3 <Part /> components, each receiving props from parts[]
+  return (
+    <div>
+      {/* Example: <Part name={parts[0].name} exercises={parts[0].exercises} /> */}
+    </div>
+  );
+};
+
+// Total component
+const Total = ({ parts }) => {
+  // TODO: Compute and render the sum of all exercises
+  return (
+    <p>
+      {/* Number of exercises: ... */}
+    </p>
+  );
+};
+
+// App root
+const App = () => {
+  const course = "Half Stack application development";
+
+  const parts = [
+    { name: "Fundamentals of React", exercises: 10 },
+    { name: "Using props to pass data", exercises: 7 },
+    { name: "State of a component", exercises: 14 },
+  ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
-      <div className="bg-gray-800 p-6 rounded-2xl shadow-lg text-center">
-        <h1 className="text-3xl font-bold mb-4">Random Compliment Generator</h1>
-        <Compliment text={selectedCompliment} />
-        <p className="mt-4 text-sm text-gray-400">Refresh to get a new compliment ✨</p>
-      </div>
+    <div>
+      <Header course={course} />
+      <Content parts={parts} />
+      <Total parts={parts} />
     </div>
   );
 };
