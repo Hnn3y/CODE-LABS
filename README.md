@@ -21,7 +21,9 @@ This repo serves as the **index** to all my learning tracks, projects, and exper
 
 ### Python Labs
 - **8th Sep 2025** → *03 → Meal Suggestion Exercise*  
-- **9th Sep 2025** → *04 → Mood of the Day Exercise*  
+- **9th Sep 2025** → *04 → Mood of the Day Exercise* 
+- **11th Sep 2025** → *06 → Smart Bio* 
+
 
 ### ⚛️ FS Labs (Fullstack Open)
 - **9th Sep 2025** → [01_Lab → Digital Visiting Card Project](./fs-open_labs/01_lab/)  
