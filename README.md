@@ -28,6 +28,7 @@ This repo serves as the **index** to all my learning tracks, projects, and exper
 ### ⚛️ FS Labs (Fullstack Open)
 - **9th Sep 2025** → [01_Lab → Digital Visiting Card Project](./fs-open_labs/01_lab/)  
 - **10th Sep 2025** → [02_Lab → Random Compliment Generator](./fs-open_labs/02_lab/)
+- **13th Sep 2025** → [03_Lab → FullStack Open Exercise](./fs-open_labs/03_fs-exercise/)
 
 
 ### 📦 Upcoming
