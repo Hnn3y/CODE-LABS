@@ -12,10 +12,44 @@ const App = () => {
      name: 'State of a component',
      exercises: 14
    }
- 
+   
+
+   //1.3: Modify the variable definitions of the App component as follows and also refactor the application so that it still works:
+   const Header = ({ course }) => {
+    return (
+      <>
+      <h1>{course}</h1>
+      </>
+    )
+   }
+
+   const Part = ({part}) => {
+    return (
+      <p>
+        {part.name} {part.exercises}
+      </p>
+    )
+   }
+
+   const Content = ({ part1, part2, part3 }) => {
+    return (
+      <>
+      <Part part={part1}/>
+      <Part part={part2}/>
+      <Part part={part3}/>
+      </>
+    )
+   }
+
    return (
      <div>
-       ...
+      <Header/>
+      <Content
+      part1={part1}
+      part2={part2}
+      part3={part3}/>
      </div>
    )
  }
+
+ export default App
