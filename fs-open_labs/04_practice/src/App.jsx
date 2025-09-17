@@ -19,9 +19,38 @@ const App = () => {
     }
   ]
 
+  const Header = ({ course }) => {
+    return (
+      <h1>
+        {course}
+      </h1>
+    )
+  }
+
+  const Part = ({ parts: {name, exercises}}) => {
+    return (
+      <p>
+        {name} {exercises}
+      </p>
+    )
+  }
+
+  const Content = ({ parts }) => {
+
+    return(
+      <>
+      <Part part={parts[0]} />
+      </>
+    )
+  }
+
   return (
     <div>
-      ...
+      <Header course= {course}/>
+      <Content
+      part={parts[0]}/>
     </div>
   )
 }
+
+export default App
