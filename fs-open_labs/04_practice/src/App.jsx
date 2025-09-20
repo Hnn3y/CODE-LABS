@@ -39,7 +39,7 @@ const App = () => {
 
     return(
       <>
-      <Part part={parts[0]} />
+      <Part part={parts} />
       </>
     )
   }
@@ -48,7 +48,8 @@ const App = () => {
     <div>
       <Header course= {course}/>
       <Content
-      part={parts[0]}/>
+      part={parts}
+     />
     </div>
   )
 }
