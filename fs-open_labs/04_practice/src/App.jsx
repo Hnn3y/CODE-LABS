@@ -27,7 +27,7 @@ const App = () => {
     )
   }
 
-  const Part = ({ parts: {name, exercises}}) => {
+  const Part = ({ part: {name, exercises}}) => {
     return (
       <p>
         {name} {exercises}
@@ -35,11 +35,13 @@ const App = () => {
     )
   }
 
-  const Content = ({ parts }) => {
+  const Content = ({ part }) => {
 
     return(
       <>
-      <Part part={parts} />
+      <Part part={part[0]} />
+      <Part part={part[1]} />
+      <Part part={part[2]} />
       </>
     )
   }
