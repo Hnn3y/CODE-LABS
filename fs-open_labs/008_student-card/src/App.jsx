@@ -1,34 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+const App = () => {
+  const student = {
+    name: 'Ada Lovelace',
+    age: 20,
+    course: 'Computer Science',
+    gpa: 3.8
+  }
 
-function App() {
-  const [count, setCount] = useState(0)
+  const StudentCard = ({ name, age, course, gpa }) => {
+    // TODO: Return JSX that displays all student info nicely
+    // Format: Name: Ada Lovelace, Age: 20, etc.
+    return(
+      <>
+      <h1>Name: {name}, <br/>
+        <p>Age:{age},</p> <br/> 
+        Course:{course}, <br/> 
+        Gpa:{gpa} </h1>
+      </>
+    )
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      {/* TODO: Use StudentCard component here */}
+      <StudentCard 
+      name={student.name} 
+      age={student.age} 
+      course={student.course} 
+      gpa={student.gpa} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
   )
 }
 
