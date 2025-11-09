@@ -11,10 +11,10 @@ const App = () => {
     // Format: Name: Ada Lovelace, Age: 20, etc.
     return(
       <>
-      <h1>Name: {name}, <br/>
-        <p>Age:{age},</p> <br/> 
-        Course:{course}, <br/> 
-        Gpa:{gpa} </h1>
+      <h1>Name: {student.name}, <br/>
+        <p>Age:{student.age},</p> <br/> 
+        Course:{student.course}, <br/> 
+        Gpa:{student.gpa} </h1>
       </>
     )
   }
@@ -22,11 +22,7 @@ const App = () => {
   return (
     <div>
       {/* TODO: Use StudentCard component here */}
-      <StudentCard 
-      name={student.name} 
-      age={student.age} 
-      course={student.course} 
-      gpa={student.gpa} />
+      <StudentCard/>
       </div>
   )
 }
