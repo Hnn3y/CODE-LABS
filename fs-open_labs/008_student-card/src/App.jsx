@@ -14,7 +14,7 @@ const App = () => {
       <h1>Name: {student.name}, <br/>
         <p>Age:{student.age},</p> <br/> 
         Course:{student.course}, <br/> 
-        Gpa:{student.gpa} </h1>
+        <br/> Gpa:{student.gpa} </h1>
       </>
     )
   }
