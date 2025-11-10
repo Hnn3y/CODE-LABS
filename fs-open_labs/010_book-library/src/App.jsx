@@ -1,34 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+const App = () => {
+  const library = {
+    name: 'City Library',
+    books: [
+      { title: '1984', author: 'George Orwell', pages: 328 },
+      { title: 'To Kill a Mockingbird', author: 'Harper Lee', pages: 281 },
+      { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', pages: 180 }
+    ]
+  }
 
-function App() {
-  const [count, setCount] = useState(0)
+  const LibraryHeader = ({ libraryName }) => {
+    // TODO: Display library name in h1
+    return(
+      <>
+      <h1>Welcome to {libraryName}</h1>
+      </>
+    )
+  }
+
+  const Book = ({ title, author, pages }) => {
+    // TODO: Display one book's info
+    return(
+      <>
+      <h2>Book`s info: <br/> Title: `{title}` by {author}, a {pages} pages read.</h2>
+      </>
+    )
+  }
+
+  const BookList = ({ books }) => {
+    // TODO: Display all books (hint: books is an array!)
+    // Use books[0], books[1], books[2] to access each book
+    return(
+      <>
+    <Book title={books[0].title} author={books[0].author} pages={books[0].pages} />
+    <Book title={books[1].title} author={books[1].author} pages={books[1].pages} />
+    <Book title={books[2].title} author={books[2].author} pages={books[2].pages} />
+    </>
+    )
+  }
+
+  const TotalPages = ({ books }) => {
+    // TODO: Calculate total pages of all books
+    return(
+      <>
+      Total pages of all Books = {books[0].pages + books[1].pages + books[2].pages}
+      </>
+    )
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      {/* TODO: Put it all together */}
+      <LibraryHeader libraryName={library.name}/>
+      <BookList books={library.books}/>
+      <TotalPages books={library.books}/>
+    </div>
   )
 }
 
