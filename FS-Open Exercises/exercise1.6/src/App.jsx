@@ -20,9 +20,13 @@ const App = () => {
       <button onClick={() => setBad(bad + 1)}>bad</button>
       </>
 
-      <p>good{good}</p>
-      <p>neutral{neutral}</p>
-      <p>bad{bad}</p>
+      <h1>statistics</h1>
+      <p>good {(good)}</p>
+      <p>neutral {(neutral)}</p>
+      <p>bad {bad}</p>
+      <p>all {good+bad+neutral}</p>
+      <p>average {(good*1 + neutral*0 + bad*-1) / (good + neutral + bad)}</p>
+      <p>positive {good/good+bad+neutral*100}</p>
     </div>
   )
 }
