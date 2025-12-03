@@ -1,5 +1,16 @@
 import { useState } from 'react'
 
+
+// Refactor your application so that displaying the statistics is extracted into its own Statistics component. 
+const Statistics = (props) => {
+  // ...
+  return(
+    <>
+    <h1>give feedback</h1>
+    </>
+  )
+}
+
 const App = () => {
   // save clicks of each button to its own state
   const [good, setGood] = useState(0)
@@ -13,12 +24,11 @@ const App = () => {
 
   return (
     <div>
-      <h1>Give Feedback</h1>
       <>
+      <Statistics/>
       <button onClick={setToGood}>good</button>
       <button onClick={() => setNeutral(neutral + 1)}>neutral</button>
       <button onClick={() => setBad(bad + 1)}>bad</button>
-      </>
 
       <h1>statistics</h1>
       <p>good {(good)}</p>
@@ -26,7 +36,8 @@ const App = () => {
       <p>bad {bad}</p>
       <p>all {good+bad+neutral}</p>
       <p>average {(good*1 + neutral*0 + bad*-1) / (good + neutral + bad)}</p>
-      <p>positive {(good / (good + bad + neutral)) * 100}%</p>    
+      <p>positive {(good / (good + bad + neutral)) * 100}%</p> 
+      </>   
       </div>
   )
 }
