@@ -21,7 +21,7 @@ const App = () => {
     setGood(good + 1)
   }
 
-
+ // 1.9: Change your application to display statistics only once feedback has been gathered.
   return (
     <div>
       <>
