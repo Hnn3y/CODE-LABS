@@ -39,7 +39,7 @@ const App = () => {
       <p>positive {(good / (good + bad + neutral)) * 100}%</p> 
       </>   
       </div>
-  
+  )
 }
 
 export default App
